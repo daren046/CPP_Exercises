@@ -16,9 +16,6 @@ void Card::print() const
 {
     switch (_value)
     {
-    case 1:
-        std::cout << "As";
-        break;
     case 11:
         std::cout << "Valet";
         break;
@@ -29,14 +26,16 @@ void Card::print() const
     case 13:
         std::cout << "Roi";
         break;
-
+    case 14:
+        std::cout << "as";
+        break;
     default:
         std::cout << _value;
         break;
     }
     std::cout << " de " << _color << std::endl;
 }
-
+/*
 std::ostream &operator<<(std::ostream &os, const Card &card)
 {
     switch (card._value)
@@ -60,3 +59,4 @@ std::ostream &operator<<(std::ostream &os, const Card &card)
     os << " de " << card._color;
     return os;
 }
+*/
