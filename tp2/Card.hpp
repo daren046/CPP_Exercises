@@ -3,7 +3,26 @@
 
 class Card
 {
+    enum Color
+    {
+        Coeur, 
+        Carreau,
+        Pique,
+        Trefle
+    };
 
+    enum Value
+    {
+        Sept,
+        Huit,
+        Neuf,
+        Dix,
+        Valet,
+        Dame,
+        Roi,
+        As 
+    };
+    
 public:
     Card(unsigned int value, const std::string &color);
     void print() const;
