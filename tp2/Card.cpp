@@ -16,17 +16,17 @@ void Card::print() const
 {
     switch (_value)
     {
-    case 11:
+    case Valet:
         std::cout << "Valet";
         break;
-    case 12:
+    case Dame:
         std::cout << "Dame";
         break;
 
-    case 13:
+    case Roi:
         std::cout << "Roi";
         break;
-    case 14:
+    case As:
         std::cout << "as";
         break;
     default:
